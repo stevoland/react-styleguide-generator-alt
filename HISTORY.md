@@ -1,3 +1,7 @@
+# 3.2.1 (2016-01-28)
+
+  * patch version bump so npm shows the latest true version
+
 # 3.2.0 (2016-01-28)
 
   * Fix issues with babel 6 found in
