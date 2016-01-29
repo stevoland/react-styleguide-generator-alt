@@ -1,5 +1,5 @@
 {
-  "name": "react-styleguide-generator-example",
+  "name": "rsg-alt-example",
   "private": true,
   "scripts": {
     "start": "npm run styleguide && npm run serve",
@@ -12,7 +12,7 @@
     "react-dom": "^0.14.0"
   },
   "devDependencies": {
-    "react-styleguide-generator": "*",
+    "rsg-alt": "^2.x",
     "serve": "^1.4.0"
   }
 }
