@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.2.2 (2016-02-05)
 
   * Filters components without `styleguide` field. Fixes #16: Fails if input files have no styleguide field
 
