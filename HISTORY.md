@@ -1,3 +1,7 @@
+# UNRELEASED
+
+  * Filters components without `styleguide` field. Fixes #16: Fails if input files have no styleguide field
+
 # 3.2.1 (2016-01-28)
 
   * patch version bump so npm shows the latest true version
