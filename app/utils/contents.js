@@ -4,7 +4,9 @@ import Components from '../../rsg-tmp/component-requires'
 
 // for `commonStrict` module formatter
 // https://babeljs.io/docs/usage/modules/#interop
-let Contents = Components.map((Content) => Content.default || Content)
+let Contents = Components
+  .map((Content) => Content.default || Content)
+  .filter((Component) => Component.styleguide)
 // compare index numbers
   .sort((a, b) => {
     a = a.styleguide.index
