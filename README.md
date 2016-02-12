@@ -414,7 +414,7 @@ Visit [http://localhost:3000/](http://localhost:3000/) in your browser.
 
 ## Remove the `styleguide` static for production
 
-It is most likely that you will not have use for the `styleguide` static prop when you're using your component in production. To remove the prop (and other unnecessary statics) during transpiling, use [babel-plugin-transform-react-remove-statics](https://www.npmjs.com/package/babel-plugin-transform-react-remove-statics)
+It is most likely that you will not have use for the `styleguide` static when you're using your component in production. To remove the static (and other unnecessary statics) during transpiling, use [babel-plugin-transform-react-remove-statics](https://www.npmjs.com/package/babel-plugin-transform-react-remove-statics)
 
 ## Troubleshooting
 
