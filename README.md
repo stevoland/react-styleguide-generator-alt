@@ -3,12 +3,11 @@
 [![npm](https://img.shields.io/npm/v/rsg-alt.svg)](https://npmjs.org/package/rsg-alt)
 
 * Use the `2.x` versions for babel 5, `3.x` for babel 6.'
-* Note that babel 6.4 requires semicolons in your class properties https://github.com/feross/standard/issues/372; packages have been fixed to 6.3 for now due to conflicts with using `standard.
 * PRs are welcome, feel free to contribute to the project!
 
 A React component guide that generates code examples, prop documentation, rendered component samples and is built for active development.
 
-* Renders out components that can be interacted with 
+* Renders out components that can be interacted with
 * Uses `webpack` + hot module replacement to automatically update the guide as you work on your components
 * `react-docgen` is used under the hood to document your component's `propTypes`
 * Can manually + automatically generate code samples w/ syntax highlighting
@@ -187,10 +186,10 @@ Options:
 
 Examples:
   rsg 'example/**/*.js' -t 'Great Style Guide' -f 'a.css, a.js' -v
-  
+
   # Necessary to use a config file if you want to enable react-docgen
   rsg 'example/**/*.js' -c 'styleguide.json' -v
-  
+
   # Example 2 - config file does module.exports = { ... }
   rsg 'example/**/*.js' -c 'styleguide.js' -v
 ```
