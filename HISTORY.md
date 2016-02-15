@@ -1,3 +1,7 @@
+# UNRELEASED
+
+  * Bumps Babel to 6.5.2. Fixes #9. No more unnecessary semicolons enforcement.
+
 # 3.2.2 (2016-02-05)
 
   * Filters components without `styleguide` field. Fixes #16: Fails if input files have no styleguide field
@@ -74,4 +78,3 @@
   * Complete overhaul of the core `rsg.js` lib to support `webpack`
   * `react-docgen` generation and asset distribution moved to custom webpack plugins
   * Fixed a bug where using input text boxes and typing into them will shift focus to the search box
-
