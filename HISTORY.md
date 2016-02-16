@@ -1,3 +1,6 @@
+# 3.3.1 (2016-02-16)
+  * Removes 'vendor' feature from webpack config to allow npm2 compatibility.
+
 # 3.3.0 (2016-02-15)
 
   * Bumps Babel to 6.5.2. Fixes #9. No more unnecessary semicolons enforcement.
