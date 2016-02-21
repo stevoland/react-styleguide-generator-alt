@@ -38,9 +38,11 @@ export default class Sections extends Component {
 
           Content.styleguide._id = i
 
+          const props = { ...this.props, ...Content.styleguide.props }
+
           return (
             <Section {...Content.styleguide} key={i}>
-              {Content.prototype.render && <Content {...this.props} />}
+              {Content.prototype.render && <Content {...props} />}
             </Section>
           )
         })}

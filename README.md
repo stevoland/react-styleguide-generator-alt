@@ -60,7 +60,10 @@ export default class extends React.Component {
     title: 'Button',
     description: 'You can use **Markdown** within this `description` field.',
     code: `<Button size='small|large' onClick={Function}>Cool Button</Button>`,
-    className: 'apply the css class'
+    className: 'apply the css class',
+    props: {
+      size: 'large'
+    }
   }
 
   onClick () {
@@ -81,6 +84,7 @@ export default class extends React.Component {
 - `description`: Components description (optional)
 - `code`: Code example (optional). Not specifying this will not auto-generate an example.
 - `className`: CSS class name (optional)
+- `props`: Properties to assign to the rendered example component (optional)
 
 #### Additional examples in tabs (optional) [Demo](http://theogravity.github.io/react-styleguide-generator-alt/#!/Features!/Additional%20examples%20in%20tabs)
 
