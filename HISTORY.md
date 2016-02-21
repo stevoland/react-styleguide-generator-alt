@@ -1,6 +1,9 @@
+# 3.5.0 (2016-02-21)
+  * Add feature to give example components initial `props`
+
 # 3.4.0 (2016-02-16)
   * Bumping previous commit to 3.4.0 instead of 3.3.1
-  
+
 # 3.3.1 (2016-02-16)
   * Removes 'vendor' feature from webpack config to allow npm2 compatibility.
 
