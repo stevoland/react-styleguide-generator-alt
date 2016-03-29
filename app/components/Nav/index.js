@@ -12,7 +12,7 @@ export default class Nav extends Component {
     let home = '/'
 
     if (window.config.base && window.config.base !== '') {
-      home = window.config.base
+      home = window.config.base + '/'
     }
 
     return (
