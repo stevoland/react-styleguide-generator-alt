@@ -1,3 +1,6 @@
+# 3.5.1 (2016-03-30)
+  * Fixes "show all" link issue when serving from sub-directory
+
 # 3.5.0 (2016-02-21)
   * Add feature to give example components initial `props`
 
