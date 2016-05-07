@@ -1,4 +1,4 @@
-# UNRELEASED
+# 2.7.0 (2016-05-07)
   * Adding json-loader to webpack loaders to handle json requires
 
 # 2.6.3 (2016-01-28)
