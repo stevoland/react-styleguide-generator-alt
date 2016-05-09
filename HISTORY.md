@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Adding json-loader to webpack loaders to handle json requires
+
 # 3.5.1 (2016-03-30)
   * Fixes "show all" link issue when serving from sub-directory
 
