@@ -1,3 +1,6 @@
+# 3.6.0 (2016-05-16)
+  * Expanding backwards compatibility to include node@0.x
+  
 # 3.5.3 (2016-05-09)
   * Adding json-loader to webpack loaders to handle json requires
 
