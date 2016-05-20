@@ -41,10 +41,6 @@ See `HISTORY.md` for future update info
 npm install rsg-alt
 ```
 
-## Quick Start
-
-**NOTE:** By default Babel's `static` keyword is disabled. You can turn them on individually by passing `stage 0` as a [babelrc](https://babeljs.io/docs/usage/babelrc/) or [options.babelConfig](#babelconfig).
-
 ### Documenting your React components
 
 Create file for the styleguide, and then add some documentation to a static field named `styleguide`. You can use the [ES6 syntax](https://github.com/lukehoban/es6features) by [Babel](https://babeljs.io/).
@@ -355,9 +351,6 @@ module.exports = {
     "//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css",
     "example/example.css"
   ],
-  "babelConfig": {
-    "stage": 0
-  },
   "webpackConfig": {}
 }
 ```
@@ -368,21 +361,6 @@ Type: `String`
 Default: `false`
 
 Enable HTML5 pushState. When this option is enabled, styleguide will use history API.
-
-##### babelConfig
-
-Type: `Object`  
-Default: `null`
-
-A usage example is below. See the [babel docs](http://babeljs.io/docs/usage/options/) for the complete list.
-
-``` js
-{
-  babelConfig: {
-    stage: 0
-  }
-}
-```
 
 ##### webpackConfig
 
