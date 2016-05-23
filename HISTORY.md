@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.7.0 (2016-05-23)
   * Preventing .babelrc conflicts with RSG compilation
 
 # 3.6.0 (2016-05-16)
