@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Fixes issue where overridden publicPath would break dev mode
+
 # 3.7.0 (2016-05-23)
   * Preventing .babelrc conflicts with RSG compilation
 
