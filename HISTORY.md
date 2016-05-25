@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.8.0 (2016-05-25)
   * Fixes issue where overridden publicPath would break dev mode
 
 # 3.7.0 (2016-05-23)
