@@ -44,12 +44,12 @@ export default class Nav extends Component {
                   {
                     contents.navList.components[category].map((component, j) => {
                       let isSelectedComponent = this.props.ctx.params.component === component
-
+                      console.log('ctx:', this.props.ctx);
                       return (
                         <li key={j}>
                           <a
                             className={`sg sg-nav-link ${isSelectedComponent ? 'is-selected' : ''}`}
-                            href={category + '/' + component}
+                            href={home + category + '/' + component}
                           >
                             {component}
                           </a>
