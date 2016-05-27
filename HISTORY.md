@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.8.1 (2016-05-27)
   * Resolves conflict between pushstate and relative navigation paths
 
 # 3.8.0 (2016-05-25)
