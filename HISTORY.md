@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Resolves conflict between pushstate and relative navigation paths
+
 # 3.8.0 (2016-05-25)
   * Fixes issue where overridden publicPath would break dev mode
 
