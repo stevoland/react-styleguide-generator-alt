@@ -49,7 +49,9 @@ export default class Nav extends Component {
                         <li key={j}>
                           <a
                             className={`sg sg-nav-link ${isSelectedComponent ? 'is-selected' : ''}`}
-                            href={category + '/' + component}
+                            href={window.config.hashbang
+                                ? category + '/' + component
+                                : home + category + '/' + component}
                           >
                             {component}
                           </a>
