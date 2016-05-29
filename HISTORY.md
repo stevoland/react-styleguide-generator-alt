@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Fixing navigation when using pushstate
+
 # 2.7.0 (2016-05-07)
   * Adding json-loader to webpack loaders to handle json requires
 

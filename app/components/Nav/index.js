@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import contents from '../../utils/contents'
+import path from 'path';
 
 export default class Nav extends Component {
   static displayName = 'SG.Nav'
@@ -35,7 +36,9 @@ export default class Nav extends Component {
                 <li className='sg' key={i}>
                   <a
                     className={`sg category sg-nav-link ${isSelectedCategory ? 'is-selected' : ''}`}
-                    href={category}
+                    href={window.config.hashbang
+                        ? category
+                        : path.join(home, category)}
                   >
                     {category}
                   </a>
@@ -49,7 +52,9 @@ export default class Nav extends Component {
                         <li key={j}>
                           <a
                             className={`sg sg-nav-link ${isSelectedComponent ? 'is-selected' : ''}`}
-                            href={category + '/' + component}
+                            href={window.config.hashbang
+                                ? path.join(category, component)
+                                : path.join(home, category, component)}
                           >
                             {component}
                           </a>
@@ -58,7 +63,6 @@ export default class Nav extends Component {
                     })
                   }
                   </ul>
-
                 </li>
               )
             })}
