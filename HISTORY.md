@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Removing git dependencies for deepmerge and react-simpletabs in favor of npm modules
+
 # 2.8.0 (2016-06-02)
   * Fixing navigation when using pushstate
 

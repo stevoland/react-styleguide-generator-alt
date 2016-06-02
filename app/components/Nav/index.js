@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import contents from '../../utils/contents'
-import path from 'path';
+import path from 'path'
 
 export default class Nav extends Component {
   static displayName = 'SG.Nav'
