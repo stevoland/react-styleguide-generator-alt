@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.9.0 (2016-06-02)
   * Allow indices of 10 and above by supporting floats.
 
 # 3.8.1 (2016-05-27)
