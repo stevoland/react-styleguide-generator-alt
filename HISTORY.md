@@ -1,4 +1,4 @@
-# UNRELEASED
+# 2.8.0 (2016-06-02)
   * Fixing navigation when using pushstate
 
 # 2.7.0 (2016-05-07)
