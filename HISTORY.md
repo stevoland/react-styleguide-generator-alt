@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Allow indices of 10 and above by supporting floats.
+
 # 3.8.1 (2016-05-27)
   * Resolves conflict between pushstate and relative navigation paths
 
