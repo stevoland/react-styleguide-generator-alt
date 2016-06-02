@@ -9,10 +9,14 @@ let Contents = Components
   .filter((Component) => Component.styleguide)
 // compare index numbers
   .sort((a, b) => {
-    a = a.styleguide.index
-    b = b.styleguide.index
+    var ai = a.styleguide.index
+    var bi = b.styleguide.index
 
-    return !a ? 1 : !b ? -1 : a.toString().localeCompare(b)
+    if (!isNaN(parseFloat(ai)) && !isNaN(parseFloat(bi))) {
+      return parseFloat(ai) - parseFloat(bi)
+    } else {
+      return !ai && !bi ? 0 : !ai ? 1 : !bi ? -1 : ai.toString().localeCompare(bi)
+    }
   })
 
 export default {
