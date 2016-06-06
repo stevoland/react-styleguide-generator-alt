@@ -1,3 +1,6 @@
+# UNRELEASED
+  * Fixes category navigation when using root or pushstate.
+
 # 3.9.0 (2016-06-02)
   * Allow indices of 10 and above by supporting floats.
 

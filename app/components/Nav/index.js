@@ -1,6 +1,12 @@
 import React, { Component, PropTypes } from 'react'
 import contents from '../../utils/contents'
 
+// determine the base of absolute paths
+let home = '/'
+if (window.config.base && window.config.base !== '') {
+  home = window.config.base + '/'
+}
+
 export default class Nav extends Component {
   static displayName = 'SG.Nav'
 
@@ -8,20 +14,18 @@ export default class Nav extends Component {
     ctx: PropTypes.object.isRequired
   }
 
+  absoluteHref (...parts) {
+    return window.config.hashbang ? parts.join('/') : home + parts.join('/')
+  }
+
   render () {
-    let home = '/'
-
-    if (window.config.base && window.config.base !== '') {
-      home = window.config.base + '/'
-    }
-
     return (
       <nav>
         <ul className='sg sg-nav'>
           <li className='sg' key={'home'}>
             <a
               className={`sg sg-nav-link`}
-              href={home}
+              href={this.absoluteHref()}
             >
               Show All
             </a>
@@ -35,7 +39,7 @@ export default class Nav extends Component {
                 <li className='sg' key={i}>
                   <a
                     className={`sg category sg-nav-link ${isSelectedCategory ? 'is-selected' : ''}`}
-                    href={category}
+                    href={this.absoluteHref(category)}
                   >
                     {category}
                   </a>
@@ -49,9 +53,7 @@ export default class Nav extends Component {
                         <li key={j}>
                           <a
                             className={`sg sg-nav-link ${isSelectedComponent ? 'is-selected' : ''}`}
-                            href={window.config.hashbang
-                                ? category + '/' + component
-                                : home + category + '/' + component}
+                            href={this.absoluteHref(category, component)}
                           >
                             {component}
                           </a>
