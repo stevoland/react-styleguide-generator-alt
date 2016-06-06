@@ -1,5 +1,6 @@
 # UNRELEASED
   * Fixes category navigation when using root or pushstate.
+  * Make bundle paths absolute to fix landing on subpaths when using pushstate
 
 # 3.9.0 (2016-06-02)
   * Allow indices of 10 and above by supporting floats.
