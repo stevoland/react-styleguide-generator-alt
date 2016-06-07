@@ -1,4 +1,4 @@
-# UNRELEASED
+# 3.10.0 (2016-06-07)
   * Fixes category navigation when using root or pushstate.
   * Make bundle paths absolute to fix landing on subpaths when using pushstate
 
