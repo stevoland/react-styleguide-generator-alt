@@ -376,6 +376,13 @@ Default: `null`
 
 Adds a custom rule(s) to the webpack loader to include additional items to transpile via `babel-loader`. This is provided as a convenience to using `webpackConfig` directly.
 
+#### babelPlugins
+
+Type: `Array<String>`
+Default: `null`
+
+Add Babel plugins in addition to those automatically provided with the presets `react`, `es2015`, `stage-0`. EG: You might want to support decorators with `transform-decorators-legacy`.
+
 ### rsg.generate([callback])
 
 Generate the files and their dependencies into a styleguide output.

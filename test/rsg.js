@@ -16,10 +16,7 @@ var TMP_DIR = 'tmp'
 function RSG (input, opts) {
   var baseOpts = {
     output: TMP_DIR,
-    config: null,
-    babelConfig: {
-      stage: 0
-    }
+    config: null
   }
 
   return _RSG(input, assign(baseOpts, opts))
@@ -115,16 +112,16 @@ describe('RSG', function () {
     })
   })
 
-  describe('opts.babelConfig', function () {
+  describe('opts.babelPlugins', function () {
     it('should default to null', function () {
-      var rsg = RSG(INPUT_FILE, { babelConfig: undefined })
-      assert.equal(rsg.opts.babelConfig, null)
+      var rsg = RSG(INPUT_FILE, {})
+      assert.equal(rsg.opts.babelPlugins, null)
     })
 
-    it('should be an object', function () {
-      var babelConfig = { stage: 0 }
-      var rsg = RSG(INPUT_FILE, { babelConfig: babelConfig })
-      assert.deepEqual(rsg.opts.babelConfig, babelConfig)
+    it('should be an array', function () {
+      var babelPlugins = ['transform-decorators-legacy']
+      var rsg = RSG(INPUT_FILE, { babelPlugins: babelPlugins })
+      assert.deepEqual(rsg.opts.babelPlugins, babelPlugins)
     })
   })
 
